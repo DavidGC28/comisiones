@@ -1,0 +1,138 @@
+/* Reset y Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; /* Espacio para que no pegue a los bordes en móvil */
+}
+
+/* Contenedor Principal */
+.contenedor {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px; /* Se ajusta solo en tablets/PC */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #38bdf8;
+}
+
+/* Estilo de los Campos */
+.campo {
+    margin-bottom: 1.2rem;
+}
+     
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+input {
+    width: 100%;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 12px;
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+
+/* Botón con mejor UX táctil */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #22c55e;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s transform 0.1s;
+}
+
+button:hover {
+    background-color: #16a34a;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Sección de Resultados */
+.resultados {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #334155;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+span {
+    font-weight: bold;
+    color: #f1f5f9;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #334155;
+    margin: 10px 0;
+}
+
+.total {
+    font-size: 1.2rem;
+    color: #22c55e;
+}
+
+/* --- Media Queries para móviles pequeños --- */
+@media (max-width: 350px) {
+    .contenedor {
+        padding: 1.2rem;
+    }
+    
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
